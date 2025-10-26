@@ -1,0 +1,188 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    padding: 0.5em 1em;
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Responsive Canvas */
+#renderCanvas {
+    width: 100%;
+    height: auto; /* Adjust height dynamically */
+    background-color: #e0e0e0; /* Light gray background */
+}
+
+/* Toggle Buttons for Model Selection */
+.model-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.model-toggle button {
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.model-toggle button:hover {
+    background-color: #555;
+}
+
+.model-toggle button:focus {
+    outline: 2px solid #555;
+    background-color: #444;
+}
+
+/* Section Styles */
+main section {
+    padding: 2em 1em;
+}
+
+#about, #contact {
+    background-color: #f0f0f0;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+form label, form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+form input, form textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 0.5em 2em;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Sketchfab Embed Styling */
+.sketchfab-embed-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.sketchfab-embed-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #renderCanvas {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 640px) {
+    #renderCanvas {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 480px) {
+    #renderCanvas {
+        height: 40vh;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .model-toggle button {
+        font-size: 0.9em;
+    }
+}
+
+button[data-model] {
+    padding: 8px 16px;
+    margin: 4px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[data-model]:hover {
+    background-color: #d0d0d0;
+  }
+  
+  button[data-model].active {
+    background-color: #4caf50; /* green */
+    color: white;
+    font-weight: bold;
+  }
+  

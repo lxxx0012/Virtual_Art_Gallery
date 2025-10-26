@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Virtual Art Gallery</title>
+</head>
+<body>
+    <header>
+        <h1>Virtual Art Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Babylon.js Canvas -->
+        <section id="gallery">
+            <canvas id="renderCanvas"></canvas>
+
+            <!-- Navigation Buttons to Toggle Models -->
+            <div class="model-toggle">
+                <button data-model="futuristic_soldier.glb">Futuristic Soldier</button>
+                <button data-model="mythcreature.glb">Myth Creature</button>
+                <button data-model="megatron.glb">Megatron</button>
+                <button data-model="uberpod.glb">Uberpod</button>
+                <button data-model="boombox.glb">Boombox</button>
+                
+            </div>
+
+            <!-- Sketchfab embed -->
+            <div class="sketchfab-embed-wrapper">
+                <iframe 
+                    title="Nymph with a shell - EINSTAR VEGA" 
+                    frameborder="0" 
+                    allowfullscreen mozallowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    src="https://sketchfab.com/models/d58bf157e576467fb87725c44f586fd2/embed"> 
+                </iframe> 
+                <p> 
+                    <a href="https://sketchfab.com/3d-models/nymph-with-a-shell-einstar-vega-d58bf157e576467fb87725c44f586fd2?utm_medium=embed&utm_campaign=share-popup&utm_content=d58bf157e576467fb87725c44f586fd2" 
+                        target="_blank" 
+                        rel="nofollow"> 
+                        Nymph with a shell - EINSTAR VEGA 
+                    </a> 
+                    by 
+                    <a href="https://sketchfab.com/shadows44?utm_medium=embed&utm_campaign=share-popup&utm_content=d58bf157e576467fb87725c44f586fd2" 
+                        target="_blank" 
+                        rel="nofollow"> 
+                        Benoît Rogez 
+                    </a> 
+                    on 
+                    <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=d58bf157e576467fb87725c44f586fd2" 
+                        target="_blank" 
+                        rel="nofollow">
+                        Sketchfab
+                    </a>
+                </p>
+            </div>
+
+            <!-- Add more artwork embeds or images here -->
+            <div class="sketchfab-embed-wrapper">
+                <iframe 
+                    title="EldeBH's Tripod Replica (2023)" 
+                    frameborder="0" 
+                    allowfullscreen mozallowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    src="https://sketchfab.com/models/a76fad4d88764e1b8cda8c2e0c29ce59/embed"> 
+                </iframe> 
+                <p>
+                    <a href="https://sketchfab.com/3d-models/eldebhs-tripod-replica-2023-a76fad4d88764e1b8cda8c2e0c29ce59?utm_medium=embed&utm_campaign=share-popup&utm_content=a76fad4d88764e1b8cda8c2e0c29ce59" 
+                        target="_blank" 
+                        rel="nofollow"> 
+                        EldeBH's Tripod Replica (2023) 
+                    </a> 
+                    by 
+                    <a href="https://sketchfab.com/durantcamion?utm_medium=embed&utm_campaign=share-popup&utm_content=a76fad4d88764e1b8cda8c2e0c29ce59" 
+                        target="_blank" 
+                        rel="nofollow"> 
+                        Durant Camion 
+                    </a> 
+                    on 
+                    <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=a76fad4d88764e1b8cda8c2e0c29ce59" 
+                        target="_blank" 
+                        rel="nofollow">
+                        Sketchfab
+                    </a>
+                </p>
+            </div>
+
+            <div class="sketchfab-embed-wrapper"> 
+                <iframe 
+                    title="Saint holding a book - EINSTAR VEGA" 
+                    frameborder="0" 
+                    allowfullscreen mozallowfullscreen="true" 
+                    webkitallowfullscreen="true" 
+                    allow="autoplay; fullscreen; xr-spatial-tracking"
+                    src="https://sketchfab.com/models/f8c7ae0a46394309bff9d345ac28f267/embed"> 
+                </iframe> 
+                <p> 
+                    <a href="https://sketchfab.com/3d-models/saint-holding-a-book-einstar-vega-f8c7ae0a46394309bff9d345ac28f267?utm_medium=embed&utm_campaign=share-popup&utm_content=f8c7ae0a46394309bff9d345ac28f267" 
+                        target="_blank" 
+                        rel="nofollow"> 
+                        Saint holding a book - EINSTAR VEGA 
+                    </a> 
+                    by 
+                        <a href="https://sketchfab.com/shadows44?utm_medium=embed&utm_campaign=share-popup&utm_content=f8c7ae0a46394309bff9d345ac28f267" 
+                            target="_blank" 
+                            rel="nofollow"> 
+                            Benoît Rogez 
+                        </a> 
+                    on 
+                        <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=f8c7ae0a46394309bff9d345ac28f267" 
+                            target="_blank"
+                            rel="nofollow">
+                            Sketchfab
+                        </a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Information Section -->
+        <section id="about">
+            <h2>About the Gallery</h2>
+            <p>Welcome to the Virtual Art Gallery, showcasing stunning artwork in an interactive 3D space</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Virtual Art Gallery</p>
+    </footer>
+    
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
